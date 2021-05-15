@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: helloworld.lambdafunction.GetAllTherapist::handleRequest
+      CodeUri: s3://bucketsharique/2f32e909688aee301a8ca1f35d2eff9d
+      Runtime: java8
